@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Harvest - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .stars {
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+        .story-image{
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .faq-section {
+            background-color: var(--light-color);
+            padding: 4rem 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '\25BC';
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            color: var(--dark-color);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/l.png" alt="Cafe Harvest Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                
+                <a href="cart.html" id="cart-icon">🛒<span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('images/hh8.png')"></div>
+                <div class="hero-slide" style="background-image: url('images/hh5.png')"></div>
+                <div class="hero-slide" style="background-image: url('images/hh3.png')"></div>
+                <div class="hero-slide" style="background-image: url('images/hh2.png')"></div>
+            </div>
+            <div class="hero-content">
+                <h1 style="font-family: Verdana; color:rgb(73, 44, 3)">Welcome to Cafe Harvest</h1>
+                <p style="color:rgb(55, 53, 53);font-family: Arial, Helvetica, sans-serif;"><i>Harvesting moments over coffee !</i></p>
+                <a href="menu.html" class="cta-button">Explore Our Menu</a>
+            </div>
+        </section>
+        <hr style="color:rgb(73, 44, 3)">
+
+        <section id="reviews">
+            <div class="reviews-container">
+                <h2 style="font-family: 'Playfair Display', serif; color:#1a1f36; text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">Trusted and Loved</h2>
+                <div class="review-slider">
+                    <div class="review-card">
+                        <div class="review-header" style="text-align: center;">
+                            <div style="margin-bottom: 20px;">
+                                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B; margin: 0 5px;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B; margin: 0 5px;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B; margin: 0 5px;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B; margin: 0 5px;"></i>
+                                <i class="fa-solid fa-star-half-stroke fa-2xl" style="color: #FFD43B; margin: 0 5px;"></i>
+                            </div>
+                            <div class="reviewer" style="margin: 20px 0;">
+                                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: #2c3e50; margin: 0;">
+                                    4.5/5
+                                </h2>
+                                <p style="font-family: 'Open Sans', sans-serif; color: #666; font-size: 1.2rem; margin-top: 10px;">
+                                    That's what our customers say
+                                </p>
+                            </div>
+                            <p style="font-family: 'Open Sans', sans-serif; font-style: italic; color: #555; font-size: 1.1rem; margin-top: 20px;">
+                                "The best coffee in town! Love the ambiance and friendly staff."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header" style="text-align: center;">
+                            <div style="margin: 20px 0;">
+                                <i class="fa-solid fa-award fa-2xl" style="color: #FFD43B; margin: 0 10px; transform: rotate(-15deg);"></i>
+                                <i class="fa-solid fa-award fa-2xl" style="color: #FFD43B; margin: 0 10px;"></i>
+                                <i class="fa-solid fa-award fa-2xl" style="color: #FFD43B; margin: 0 10px; transform: rotate(15deg);"></i>
+                            </div>
+                            <div class="reviewer" style="margin: 20px 0;">
+                                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700; color: #2c3e50; line-height: 1.4; margin: 0;">
+                                    Best Cafe Award Winner
+                                    <br>
+                                    <span style="font-size: 1.4rem;">2023-24, Chandigarh</span>
+                                </h3>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <p style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #444; margin: 0;">
+                                    Times Of India 
+                                    <i class="fa-solid fa-newspaper" style="color: #444444; margin-left: 8px;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header" style="text-align: center;">
+                            <div style="margin: 20px 0;">
+                                <i class="fa-solid fa-leaf fa-3x" style="color: #77bb41;"></i>
+                            </div>
+                            <div class="reviewer" style="margin: 20px 0;">
+                                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: #2c3e50; margin: 0;">
+                                    We are carbon neutral
+                                </h3>
+                            </div>
+                            <p style="font-family: 'Open Sans', sans-serif; color: #555; font-size: 1.1rem; margin-top: 20px;">
+                                "We use 100% Recyclable materials"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr style="color:rgb(73, 44, 3)">
+
+        <section id="our-story">
+            <div class="story-container">
+                <h2 style="font-family: Verdana; color:black; text-align: center; margin-bottom: 2rem;">Our Story</h2>
+                <div class="story-content">
+                    <div class="story-text">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; color: #000000;">Welcome to Cafe Harvest, where every cup tells a story. Founded in 2020, we've been serving premium coffee and creating memorable experiences for our community.</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; color: #000000;">Our passion for quality coffee, combined with a warm, inviting atmosphere, makes Cafe Harvest more than just a coffee shop - it's a place where moments are cherished and connections are made.</p>
+                    </div>
+                    <div class="story-image">
+                        <img src="images/aabt.jpg" alt="Cafe Story">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr style="color:rgb(73, 44, 3)">
+
+        <!-- Updated FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 style="font-family: Verdana; color:rgb(73, 44, 3); text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <p class="faq-question">What are your operating hours?</p>
+                        <div class="faq-answer">
+                            <p>We are open Monday to Friday from 7am to 8pm, and on weekends (Saturday and Sunday) from 8am to 9pm.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Where are you located?</p>
+                        <div class="faq-answer">
+                            <p>Our cafe is located in Sector 7, Chandigarh. We're easily accessible and have ample parking space available.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Do you offer vegetarian and vegan options?</p>
+                        <div class="faq-answer">
+                            <p>Yes, we have a wide range of vegetarian options and several vegan choices on our menu. Our staff will be happy to assist you with dietary requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Can I book the cafe for private events?</p>
+                        <div class="faq-answer">
+                            <p>Absolutely! We offer private event bookings for special occasions. Please contact us at info@cafeharvest.com or call +91 9876543210 for more information and availability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <hr style="color:rgb(73, 44, 3)">
+<hr>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Sector 7, Chandigarh</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Email: info@cafeharvest.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="hours">
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 7am - 8pm</p>
+                    <p>Sat-Sun: 8am - 9pm</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Cafe Harvest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isOpen = question.classList.contains('active');
+                    
+                    // Close all other answers
+                    faqQuestions.forEach(q => {
+                        if (q !== question) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+                    
+                    // CURRENT
+                    if (!isOpen) {
+                        question.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        question.classList.remove('active');
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        // Auto Slider for Hero Section
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            // Show first slide
+            slides[0].classList.add('active');
+            slides[0].style.opacity = '1';
+
+            // Function to change slides
+            function changeSlide() {
+                // Hide current slide
+                slides[currentSlide].style.opacity = '0';
+                slides[currentSlide].classList.remove('active');
+
+                // Move to next slide
+                currentSlide = (currentSlide + 1) % slides.length;
+
+                // Show next slide
+                slides[currentSlide].style.opacity = '1';
+                slides[currentSlide].classList.add('active');
+            }
+
+            // Start automatic sliding every 4 seconds
+            setInterval(changeSlide, 4000);
+        });
+    </script>
+</body>
+</html>
